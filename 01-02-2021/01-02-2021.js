@@ -44,7 +44,7 @@ console.timeLog('first approach');
     {sym: "PYPL", cost: 150},
     {sym: "AMZN", cost: 2500}
   ]
-  first approach: 0.174072265625 ms
+  first approach: 3.015ms
 */
 
 /* SECOND APPROACH */
@@ -74,5 +74,30 @@ console.timeLog('second approach');
     {sym: "PYPL", cost: 150},
     {sym: "AMZN", cost: 2500}
   ]
-  second approach: 0.138916015625 ms
+  second approach: 0.173ms
+*/
+
+const filterStocks3 = (allStocks) => {
+  const stockAsObject = allStocks.reduce((acc, curr) => {
+    const { sym } = curr;
+    acc[sym] = curr;
+    return acc;
+  }, {});
+
+  return stockAsObject;
+};
+
+console.time('third approach');
+const filteredSnapshot3 = filterStocks3(snapshot);
+console.log('filteredSnapshot3', filteredSnapshot2);
+console.timeLog('third approach');
+
+/*
+  filteredSnapshot = [
+    {sym: "GME", cost: 300},
+    {sym: "PYPL", cost: 150},
+    {sym: "AMZN", cost: 2500}
+  ]
+  
+  second approach: 0.134ms
 */
