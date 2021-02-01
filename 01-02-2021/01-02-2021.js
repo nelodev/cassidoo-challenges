@@ -130,5 +130,5 @@ console.timeLog('fourth approach');
     {sym: "AMZN", cost: 2500}
   ]
   
-  fourth approach: 0.134ms
+  fourth approach: 0.114ms
 */
