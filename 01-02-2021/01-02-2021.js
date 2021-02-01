@@ -84,6 +84,7 @@ const filterStocks3 = (allStocks) => {
     return acc;
   }, {});
 
+  console.log('stockAsObject', stockAsObject);
   return stockAsObject;
 };
 
