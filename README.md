@@ -1,4 +1,4 @@
-# Cassidoo Challenges - Nelodev Solutions
+# Cassidoo Challenges - Nelodev Solutions (Ubuntu)
 
 First challenge (01/02/21) ✅
 
